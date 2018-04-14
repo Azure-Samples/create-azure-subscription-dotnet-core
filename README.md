@@ -1,57 +1,45 @@
-# Project Name
+# Programmatically create Azure EA Subscriptions with .NET Core
 
-(short, 1-3 sentenced, description of the project)
+This is a simple .NET Core sample that uses the Azure .NET SDK to programmatically create EA subscriptions with a service principal.
 
-## Features
+## Run this sample
 
-This project framework provides the following features:
+1. Get the [.NET Core SDK](https://www.microsoft.com/net/core).
 
-* Feature 1
-* Feature 2
-* ...
+1. Create an Azure service principal either through
+    [Azure CLI](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?toc=%2fazure%2fazure-resource-manager%2ftoc.json),
+    [PowerShell](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-authenticate-service-principal/)
+    or [the portal](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal/).
 
-## Getting Started
+1. As an EA Account Owner, follow instructions to [give the service principal access to your enrollment account](https://aka.ms/easubcreationpublicpreview).
 
-### Prerequisites
+1. Clone the repository and install dependencies
 
-(ideally very short, if any)
+    ```bash
+    git clone https://github.com/Azure-Samples/create-azure-subscription-dotnet-core.git
+    cd create-azure-subscription-dotnet-core
+    dotnet restore
+    ```
 
-- OS
-- Library version
-- ...
+1. Create an `appsettings.json` using your subscription ID, tenant domain, client ID, and client secret from the service principle that you created. Example:
 
-### Installation
+    ```json
+    {
+        "tenantId": "yourtenant.onmicrosoft.com",
+        "appId": "app ID of the service principal",
+        "secret": "client secret of the service principal"
+    }
+    ```
 
-(ideally very short)
+1. Run the sample.
 
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
-
-
-## Demo
-
-A demo app is included to show how to use the project.
-
-To run the demo, follow these steps:
-
-(Add steps to start up the demo)
-
-1.
-2.
-3.
+    ```bash
+    dotnet run
+    ```
 
 ## Resources
 
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+* [Programmatically create Azure Enterprise subscriptions (preview)](https://aka.ms/easubcreationpublicpreview)
+* [Azure Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/)
+* [Azure EA Dev/Test option](https://azure.microsoft.com/offers/ms-azr-0148p/)
+* [EA cost reporting API](https://docs.microsoft.com/azure/billing/billing-enterprise-api)
