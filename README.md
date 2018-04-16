@@ -21,7 +21,7 @@ This is a simple .NET Core sample that uses the Azure .NET SDK to programmatical
     dotnet restore
     ```
 
-1. Create an `appsettings.json` using your subscription ID, tenant domain, client ID, and client secret from the service principle that you created. Example:
+1. Create an `appsettings.json` using your tenant ID, application client ID, and client secret from the service principal that you created. Example:
 
     ```json
     {
