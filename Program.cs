@@ -1,19 +1,15 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using System.Threading;
-using System.Collections.Generic;
+using System;
 using Microsoft.Extensions.Configuration;
 
-// Azure dependencies
+using System.Threading;
+using System.IO;
 using Microsoft.Rest;
 using Microsoft.Rest.Azure.Authentication;
+
 using Microsoft.Azure.Management.Billing;
 using Microsoft.Azure.Management.Billing.Models;
 using Microsoft.Azure.Management.Subscription;
 using Microsoft.Azure.Management.Subscription.Models;
-using Microsoft.IdentityModel.Clients.ActiveDirectory;
-using System.Diagnostics;
 
 namespace CreateSubSample
 {
