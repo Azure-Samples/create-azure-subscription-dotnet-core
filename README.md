@@ -1,3 +1,13 @@
+---
+page_type: sample
+languages:
+- csharp
+products:
+- dotnet
+- azure
+description: "This is a simple .NET Core sample that uses the Azure .NET SDK to programmatically create EA subscriptions with a service principal."
+---
+
 # Programmatically create Azure EA Subscriptions with .NET Core
 
 This is a simple .NET Core sample that uses the Azure .NET SDK to programmatically create EA subscriptions with a service principal.
