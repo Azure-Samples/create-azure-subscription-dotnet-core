@@ -53,3 +53,4 @@ This is a simple .NET Core sample that uses the Azure .NET SDK to programmatical
 * [Azure Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/)
 * [Azure EA Dev/Test option](https://azure.microsoft.com/offers/ms-azr-0148p/)
 * [EA cost reporting API](https://docs.microsoft.com/azure/billing/billing-enterprise-api)
+
